@@ -22,6 +22,7 @@
 			print_r($arr3);
 			print_r($arr4);
 		?>
+		<br>
 		<?php
 		for ($i = 1; $i <= 200; $i++) {
 			if ($i % 2 == 0) {
@@ -31,6 +32,16 @@
 			}
 		}
 		?>
+		<div>
+			<h1>Đăng nhập hệ thống</h1>
+			<form action="info.php" method="get">
+				<label for="username">Tên đăng nhập : </label>
+				<input type="text" name="username"> <br><br>
+				<label for="password">Mật khẩu:</label>
+				<input type="password" name="password"><br><br>
+				<input type="submit">
+			</form>
+		</div>
 		
 	</body>
 </html>
