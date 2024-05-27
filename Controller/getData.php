@@ -1,5 +1,5 @@
 <?php
-require "./Model/Database.php";
+require './Model/Database.php';
 
 $conn = new Database();
 $conn->dBConnection();
