@@ -1,7 +1,8 @@
 <?php
-require "/workspaces/ContainerWebPhpDev/Model/Database.php"
-//test root
+require "./Model/Database.php";
 
-$conn = Database.dbConnection();
+$conn = new Database();
+$conn->dBConnection();
 //get api
+echo $conn->dBConnection();
 ?>
