@@ -26,9 +26,12 @@ $rowcount=mysqli_num_rows($query);
 
 printf($rowcount);
 return $rowcount;*/
+echo "test";
 return "hello";
 }
 }
 
+$test = new Database();
+echo $test->dBConnection();
 
 ?>
