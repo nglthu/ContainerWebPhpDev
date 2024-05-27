@@ -30,8 +30,8 @@ echo "test";
 return "hello";
 }
 }
-
+/*
 $test = new Database();
 echo $test->dBConnection();
-
+*/
 ?>
