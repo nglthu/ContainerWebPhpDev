@@ -1,7 +1,8 @@
 <?php
-$db = require './Model/Database.php';
+require_once './workspaces/ContainerWebPhpDev/Model/Database.php';
 
-$conn = new $db->Database();
+
+$conn = new Database();
 $conn->dBConnection();
 //get api
 echo $conn->dBConnection();
