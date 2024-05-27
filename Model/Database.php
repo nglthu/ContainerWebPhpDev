@@ -1,7 +1,7 @@
 <?php
 class Database {
 public function dBConnection(){
-
+/*
 $host="mysql-2eb27325-insourceit-0c39.h.aivencloud.com";
 
 $user="avnadmin";
@@ -25,7 +25,8 @@ $rowcount=mysqli_num_rows($query);
 //echo "my result <a href='data/" . htmlentities($row['classtype'], ENT_QUOTES, 'UTF-8') . ".php'>sinh vien</a>";
 
 printf($rowcount);
-return $rowcount;
+return $rowcount;*/
+return "hello";
 }
 }
 
