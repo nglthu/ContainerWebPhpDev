@@ -1,12 +1,13 @@
 <?php
 //require_once './workspaces/ContainerWebPhpDev/Model/Database.php';
-$test = require './/Model/Database.php';
+include __DIR__. './Model/Database.php';
 
 //$test =getcwd();
 /*
-/workspaces/ContainerWebPhpDev/Controller
+/workspaces/ContainerWebPhpDev/Controller */
+
 $conn = new Database();
-$conn->dBConnection();*/
+$test = $conn->dBConnection();
 //get api
 echo $test;
 ?>
