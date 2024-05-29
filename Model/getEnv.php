@@ -20,8 +20,9 @@ $host = getenv('Host');
 $port =getenv('Port');
 $user = getenv('User');
 $password = getenv('Password');
+$uriGet = getenv('urIGet');
+$envArray = array($db,$host, $port, $user, $password,$uriGet);
 
-$envArray = array($db,$host, $port, $user, $password);
 
 return $envArray;
 
