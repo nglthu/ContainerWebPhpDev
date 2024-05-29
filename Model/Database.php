@@ -2,35 +2,39 @@
 class Database {
 public function dBConnection(){
 
-$host="mysql-2eb27325-insourceit-0c39.h.aivencloud.com";
+    $uri = "mysql://avnadmin:AVNS_5Ych6k-xoWyh12cOlnI@mysql-2eb27325-insourceit-0c39.h.aivencloud.com:17610/defaultdb?ssl-mode=REQUIRED";
 
-$user="avnadmin";
-$port="17610";
-$password="AVNS_5Ych6k-xoWyh12cOlnI";
-
-$con=mysqli_connect($host,$user,$password);
-
-mysqli_select_db($con,"defaultdb"); 
-//To select the database
-
-session_start(); //To start the session
-
-$query=mysqli_query($con,"select * from sach"); 
-
-//$row = mysqli_fetch_array($query);
-
-$rowcount=mysqli_num_rows($query);
-//made query after establishing connection with database.
-
-//echo "my result <a href='data/" . htmlentities($row['classtype'], ENT_QUOTES, 'UTF-8') . ".php'>sinh vien</a>";
-
-printf($rowcount);
-return $rowcount;
+    $fields = parse_url($uri);
+    
+    // build the DSN including SSL settings
+    $conn = "mysql:";
+    $conn .= "host=" . $fields["host"];
+    $conn .= ";port=" . $fields["port"];;
+    $conn .= ";dbname=defaultdb";
+    $conn .= ";sslmode=verify-ca;sslrootcert='pri/ca.pem'";
+    
+    try {
+        $db = new PDO($conn, $fields["user"], $fields["pass"]);
+    
+        $stmt = $db->query("SELECT version()");
+    
+        print($stmt->fetch()[0]);
+        $row = $db->query("select * from todos");
+    
+       
+        if($row->rowCount()>0){
+            while ($r = $row->fetchObject()){
+                echo $r->date;
+                echo $r->description;
+    
+            }
+        }
+       
+    } catch (Exception $e) {
+        echo "Error: " . $e->getMessage();
+    }
 
 }
 }
-/*
-$test = new Database();
-echo $test->dBConnection();
-*/
+
 ?>
