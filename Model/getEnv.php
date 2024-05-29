@@ -3,7 +3,8 @@
 class getEnv{
     function getEnv(){
 
-$env = file_get_contents('./Model/.env');
+
+$env = file_get_contents('/workspaces/ContainerWebPhpDev/Model/.env');
 
 
 $lines = explode("\n",$env);
