@@ -2,7 +2,7 @@
 
 class apiRest{
 
-    function getStatusCodeMeeage($status){
+    public function getCodeMessage($status){
         $codes = Array(
         100 => 'Continue',
         101 => 'Switching Protocols',
@@ -49,11 +49,8 @@ class apiRest{
         
         return (isset($codes[$status])) ? $codes[$status] : '';
         }
-        
-
-
+   
 }
-
 
 
 ?>
