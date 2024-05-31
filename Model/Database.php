@@ -20,9 +20,9 @@ public function dBConnection(){
     try {
         $db = new PDO($conn, $fields["user"], $fields["pass"]);
     
-        $stmt = $db->query("SELECT version()");
+      //  $stmt = $db->query("SELECT version()");
     
-        print($stmt->fetch()[0]);
+       // print($stmt->fetch()[0]);
         $row = $db->query("select * from todos");
     
        
