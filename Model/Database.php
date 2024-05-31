@@ -30,6 +30,8 @@ public function dBConnection(){
             while ($r = $row->fetchObject()){
                 echo $r->date;
                 echo $r->description;
+                $arr = array('date' => $r->date, 'description' => $r->desription);
+                echo json_encode($arr);
     
             }
         }
