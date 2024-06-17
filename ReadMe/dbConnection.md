@@ -1,4 +1,6 @@
 
+[BACK](https://nglthu.github.io/ContainerWebPhpDev/)
+
 # Create Php Project using virtual platforms
 
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-php)
@@ -129,7 +131,4 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 [BACK](https://nglthu.github.io/ContainerWebPhpDev/)
 
-## License
 
-Copyright © Microsoft Corporation All rights reserved.<br />
-Licensed under the MIT License. See LICENSE in the project root for license information.
