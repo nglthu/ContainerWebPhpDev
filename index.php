@@ -8,11 +8,11 @@ function sayHello($name) {
 
 <html>
 	<head>
-		<title>Advanced Web Development K15-N03</title>
+		<title>Advanced Web Development</title>
 	</head>
 	<body>
 		<?php 
-		sayHello('K15-N03 2024');		
+		sayHello('everyone');		
 		?>
 		<form action="checkLogin.php" method="POST">
 		<a>Username:</a><input type=text name="userName" size =16>
