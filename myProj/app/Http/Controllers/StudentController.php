@@ -1,15 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
+use app\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class StudentController extends Controller
 {
-   public function studentName(){
+   public function index(){
       //  $studentName = $_REQUEST["studentName"];
       //  echo "hello $studentName";
-        return 'webNC03';
+        return view('webNC03');
 
     }
    
