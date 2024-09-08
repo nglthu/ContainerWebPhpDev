@@ -18,5 +18,13 @@
     <div>
         @yield('content');
     </div>
+    <thead>
+        <tr>
+            <th>Student Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{$student}}
+    </tbody>
 </body>
 </html>
