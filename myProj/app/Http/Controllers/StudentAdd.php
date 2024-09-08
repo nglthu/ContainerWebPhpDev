@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Student;
+use App\Models\Student;
 
 class StudentAdd extends Controller
 {
     //
     public function index(){
-       // $student = Student::all();
-        //return view('webNC03', compact('student'));
-        return view('webNC03');
+        $student = Student::all();
+        return view('webNC03', compact('student'));
+       // return view('webNC03');
 
     }
     public function create(){
