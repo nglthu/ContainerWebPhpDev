@@ -25,6 +25,8 @@
     </thead>
     <tbody>
         {{$student}}
+        
+       
     </tbody>
 </body>
 </html>
