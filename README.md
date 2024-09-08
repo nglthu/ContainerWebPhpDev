@@ -42,6 +42,28 @@ laravel new myProj
 ```
 myProj>php artisan serve
 ```
+# Database for Laravel
+## Local Database for Laravel
+```
+mProj>database
+```
+
+    1. Create a Database locally
+    2. Rename .env.example file to .env inside your project root and fill the database information. (windows won't let you do it, so you have to open your console cd your project root directory and run mv .env.example .env )
+    Open the console and cd your project root directory
+    3. Run composer install
+    4. Run php artisan key:generate
+    5. Run php artisan migrate
+    6. Run php artisan db:seed        //to run seeders, if any.
+    7. Run php artisan serve
+    
+## Cloud Database for Laravel
+```
+Change setting in myProj>config
+
+config>database.php
+
+```
 
 # Try Out Development Containers: PHP
 
