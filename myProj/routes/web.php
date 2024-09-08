@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\StudentController;
+use App\Http\Controllers\StudentAdd;
 
 
 Route::get('/', function () {
@@ -14,5 +15,5 @@ Route::get('/webNC03', function () {
 
 
 
-Route::get('/student', [StudentController::class, 'index']);
+Route::get('/student', [StudentAdd::class, 'index'])->name('webNC03');
 

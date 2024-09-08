@@ -1,5 +1,10 @@
 <html>
-    <head><title>Web nang cao N03 2024-2025</title></head>
+    <head>
+        <title>Web nang cao N03 2024-2025</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
 
 <body>
     <h1>Hello web nang cao N03 </h1>
@@ -10,5 +15,8 @@
 
 
     </form>
+    <div>
+        @yield('content');
+    </div>
 </body>
 </html>
