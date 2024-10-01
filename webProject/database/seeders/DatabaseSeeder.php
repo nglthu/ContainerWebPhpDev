@@ -22,9 +22,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Book::factory()->create([
-            'BookID' => 'b1',
-            'Title' => 'test',
-            'Created_at'=>'',
+            'BookID' => 'b11',
+            'Title' => 'test1',
+           
         ]);
     }
 }
