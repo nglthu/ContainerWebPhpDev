@@ -1,3 +1,4 @@
+<html>
 <div>
     <!-- Be present above all else. - Naval Ravikant -->
 
@@ -11,6 +12,8 @@
         </tr>
     </thead>
     <tbody>
-        {{books}}
+        {{$books}}
     </tbody>
 </div>
+
+</html>
