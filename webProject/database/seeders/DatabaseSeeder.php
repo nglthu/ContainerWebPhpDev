@@ -22,8 +22,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Book::create([
-            'BookID' => 'b11',
-            'Title' => 'test1',
+            'BookID' => 'b12',
+            'Title' => 'OOP',
            
         ]);
     }
