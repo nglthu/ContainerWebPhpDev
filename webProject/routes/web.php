@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,3 +9,5 @@ Route::get('/', function () {
 });
 
 Route::get('/book', [BookController::class, 'index'])->name('book');
+
+Route::get('/student', [StudentController::class, 'index'])->name('student');
