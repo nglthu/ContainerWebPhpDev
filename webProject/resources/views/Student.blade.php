@@ -74,7 +74,7 @@
         </div>
     </div>
     @foreach($students as $st)
-
+    
 
     <div class="row align-items-end" style="background-color: #e3f2fd; color:green">
     <div class="col" >
@@ -106,9 +106,13 @@
 
         </div>
         <div class="col" >
-          
+        <button type="button" class="btn btn-success">Edit</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+
+
         </div>
     </div>
+    <div class="row " style="background-color: white; "></div>
     @endforeach
     </div>
 
