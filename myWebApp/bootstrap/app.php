@@ -10,26 +10,17 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
     )
-    ->withMiddleware(function (Middleware $middleware) {
-        //
-    })
+    
 
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
-            'https://special-funicular-pj7qr4qv9r9x3vpq-8001.app.github.dev/*',
-            'https://special-funicular-pj7qr4qv9r9x3vpq-8001.app.github.dev',
+            'https://special-funicular-pj7qr4qv9r9x3vpq-8001.app.github.dev/postData',
+            'http://127.0.0.1/postData',
         ]);
-        })  
-        ->withMiddleware(function (Middleware $middleware) {
-            $middleware->validateCsrfTokens(except: [
-                'stripe/*',
-                'http://example.com/foo/bar',
-                'http://example.com/foo/*',
-            ]);
-        })
+        })->create();  
+       
     /*
     ->withExceptions(function (Exceptions $exceptions) {
-        //https://special-funicular-pj7qr4qv9r9x3vpq-8001.app.github.dev/postData
+       
     
-    })->create();
-*/;
+    })->create();*/
